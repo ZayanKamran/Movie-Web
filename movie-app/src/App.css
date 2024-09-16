@@ -1,0 +1,76 @@
+/* App.css */
+.app {
+  font-family: Arial, sans-serif;
+  text-align: center;
+  overflow-x: hidden; /* Prevent horizontal scrolling */
+}
+
+.navbar {
+  background-color: #333;
+  color: #fff;
+  padding: 10px;
+}
+
+.nav-links {
+  list-style-type: none;
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+}
+
+.search-bar {
+  margin: 20px;
+}
+
+.movies-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 15px;
+  padding: 20px;
+}
+
+.movie-card {
+  width: 200px; /* Set a fixed width for the movie cards */
+  cursor: pointer;
+  transition: transform 0.3s;
+  position: relative; /* Enable absolute positioning for child elements */
+  overflow: hidden; /* Hide overflow if the content exceeds the card size */
+}
+
+.movie-card img {
+  width: 100%; /* Make the image fit the card width */
+  height: 300px; /* Set a fixed height for images */
+  object-fit: cover; /* Ensure the image covers the area without distortion */
+}
+
+.movie-card:hover {
+  transform: scale(1.05);
+}
+
+.movie-info {
+  padding: 10px;
+  background-color: rgba(0, 0, 0, 0.7); /* Dark background with transparency */
+  color: #fff;
+  position: absolute; /* Position movie info at the bottom of the card */
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+}
+
+.modal {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: white;
+  padding: 20px;
+  border-radius: 8px;
+  width: 80%;
+  max-width: 600px;
+  outline: none;
+}
+
+.pagination {
+  margin: 20px;
+}
